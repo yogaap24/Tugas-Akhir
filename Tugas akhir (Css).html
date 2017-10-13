@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Tugasakhir.css">
+	<title>Css</title>
+</head>
+<body>
+<body class="body4">
+<div class="layout4">
+<input type="checkbox" id="sidebartoggler" name="" value="">
+<div class="page-wrap">
+	<label for="sidebartoggler" class="toggle4">&equiv;</label>
+	<div class="sidebar">
+	<b>
+		<li id="home"><a href="Tugasakhir2.html">Home</a></li>
+		<li id="menu"><a href="Tugas akhir (menu).html">Menu</a>
+		<ul class="list">
+			<li><a href="Tugas akhir (java).html" style="text-decoration: none; color: #fff;">Java</a></li>
+			<li><a href="Tugas akhir (js).html" style="text-decoration: none; color: #fff;">JavaScript</a></li>
+			<li><a href="Tugas akhir (MySQL).html" style="text-decoration: none; color: #fff;">MySQL</a></li>
+			<li><a href="Tugas akhir (Css).html" style="text-decoration: none; color: #fff;">Css</a></li>
+			<li><a href="Tugas akhir (Php).html" style="text-decoration: none; color: #fff;">Php</a></li>
+			<li><a href="Tugas akhir (Download).html" style="text-decoration: none; color: #fff;">Download</a></li>
+			</ul></li>
+		<li id="reference"><a href="Tugas akhir (referensi).html">Reference</a></li>
+		<li id="about"><a href="Tugas akhir (kote).html">About</a></li>
+</div></b>
+</div>
+	</div>
+		</div>
+		<header class="mainheader">
+			<nav><ul class="active">
+			<li><a href="Tugas akhir (menu).html"><b>Learn</b></a></li>
+			<li><a href="Tugas akhir (Download).html"><b>Download</b></a></li>
+			<li><a href="Tugas akhir (referensi).html"><b>Reference</b></a></li>
+		</ul></nav>
+		</header>
+		 <div class="maincontent">
+		<div class="content">
+			<article class="topcontent">
+				<header>
+                	<h2 style="color: #000;">Trik menulis Css agar loading cepat</h2>
+       			</header>
+                
+                <content>
+                <div align="center">
+                <img src="css3.png" style="width: 30%;">
+                </div>
+                	<p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="color: #333; font-family: sans-serif;">Hello World! Sudah saya jelaskan pada pos terdahulu, CSS (Cascading Style Sheet) merupakan bahasa pemrograman yang digunakan untuk mempercantik tampilan suatu halaman website. Secara umum, penulisan CSS ada 3 cara, yaitu in-line, internal, dan eksternal. Nah, gimana sih penulisan inline, internal, dan eksternal itu? Mari kita simak berikut.
+                	</font></p>
+                	<h3 style="background-color: #2aa9e0; border-bottom-right-radius: 33px; border-top-right-radius: 88px; color: white; font-family: sans-serif; font-size: 26px; line-height: 69px; width: 90%;"><div style="background-color: #016fba; float: left; margin-right: 40px; width: 5%;">&nbsp; </div>In-line</h3>
+              <pre style="background-color: #33322d; border: 1px solid rgb(221, 221, 221); font-family: monospace, Courier; font-size: 14px; line-height: 3%; padding: 2%; tab-size: 4; white-space: pre-wrap;">
+	<b style="color: #fff;">&lt;<span style="color: #ff070d;">div</span> <span style="color: #a6e21e;">style</span>=<span style="color: #e6db4f;">"Stylesheet Code disini"</span>&gt; <span style="color: #fff;">Ini elemen</span> &lt;/<span style="color: #ff070d;">div</span>&gt;</b>
+                	</pre>
+                	<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif; font-weight: 100; text-align: justify;">Cara pertama yaitu in-line. Maksudnya, penulisan kode-kode css itu ditulis di dalam atribut style pada suatu elemen. Cara ini sangat tidak efektif dan tidak enak dipandang. Iya kalau style-nya cuma font-size aja, kalau banyak? Kan jadi nggak enak di pandang. Makanya, cara ini sangat sedikit penggunannya (kecuali script style-nya cuma sedikit).</font></p>
+                	<h3 style="background-color: #2aa9e0; border-bottom-right-radius: 33px; border-top-right-radius: 88px; color: white; font-family: sans-serif; font-size: 26px; line-height: 69px; width: 90%;"><div style="background-color: #016fba; float: left; margin-right: 40px; width: 5%;">&nbsp; </div>Internal</h3>
+              <pre style="background-color: #33322d; border: 1px solid rgb(221, 221, 221); font-family: monospace, Courier; font-size: 14px; line-height: 0.7em; padding: 1em; tab-size: 4; white-space: pre-wrap;">
+	<b style="color: #720101;">&lt;style type="text/css"></b><br>
+ 	<b style="color: #42b3f4;">      /*Kode Disini*/</b><br>
+  	<b style="color: #ccbf10;">&lt;/style></b>
+                	</pre>
+                	<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif; font-weight: 100; text-align: justify;">Hampir sama dengan in-line, penulisan css secara internal ini masih menjadi satu file. Hanya saja, penulisan internal ini kode css-nya diletakkan di bagian &lt;head&ggt; menggunakan elemen <style type="text/css"></style>. Cara ini banyak digunakan oleh web designer dan developer karena script-nya enak dipandang dan ringan di-load. Akan tetapi, kita akan direpotkan membuka file yang akan diedit style-nya satu-satu (pada setiap file), karena kode-nya tidak sentral dan juga nantinya akan terdapat banyak baris kode.</font></p>
+                	<h3 style="background-color: #2aa9e0; border-bottom-right-radius: 33px; border-top-right-radius: 88px; color: white; font-family: sans-serif; font-size: 26px; line-height: 69px; width: 90%;"><div style="background-color: #016fba; float: left; margin-right: 40px; width: 5%;">&nbsp; </div>Eksternal</h3>
+                	<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif; font-weight: 100; text-align: justify;">Cara penulisan yang satu ini juga banyak digunakan oleh para web developer dan designer karena kode yang terpusat / tersentralisasi pada sebuah script css dan menjadikan script-nya enak dipandang. Akan tetapi penulisan eksternal ini memiliki kekurangan yang fatal, yakni jika kita membuka sebuah halaman web yang css-nya tersentral, maka css yang kita load bukan hanya untuk laman yang kita buka saja, tetapi css untuk semua laman akan ikut di-load, sehingga dapat menyebabkan kelemotan.
+
+					<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif; font-weight: 100; text-align: justify;">Penggunaan CSS Eksternal ini agar dapat diterapkan pada suatu laman web harus dipanggil dulu menggunakan elemen di bawah ini dan diletakkan di bagian &lt;head&gt;</font></p>
+					 <pre style="background-color: #33322d; border: 1px solid rgb(221, 221, 221); font-family: monospace, Courier; font-size: 14px; line-height: 3%; padding: 2%; tab-size: 4; white-space: pre-wrap;">
+	<b style="color: #fff;">&lt;<span style="color: #ff070d;">link</span> <span style="color: #a6e21e;">href</span>=<span style="color: #e6db4f;">"File.css"</span> <span style="color: #e6db4f;">rel</span>=<span style="color: #ff070d;">"stylesheet"</span>&gt;</b>
+                	</pre>
+                	<h2 style="text-align: justify;"><b> Tapi, gimana sih caranya menulis kode CSS biar nggak lemot dan nggak ribet?</b></h2>
+
+					<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif; font-weight: 100; text-align: justify;">Caranya simpel, padukan antara cara internal dan eksternal. Maksudnya, pisahkan file script css (eksternal), buat 2 tipe file, yang pertama adalah style yang hampir semua (banyak) laman membutuhkan, seperti style body, atau #header / #container, dan sebagainya. Sedangkan, tipe file yang kedua adalah script yang memuat style yang spesifik, seperti style pada tombol (button) dengan class="tombol" saja. Dengan begitu, pengunjung / klien tidak akan me-load semua style yang tidak diperlukan sehingga loading menjadi lebih cepat. Semoga bermanfaat.... Salam Koding!.
+                </font></content>
+            </article>
+        </div>
+    </div>
+</body>
+</html>

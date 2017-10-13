@@ -1,0 +1,83 @@
+.body1 {
+			background: url("java-jdk.jpg") no-repeat;
+			width: 1000px;
+			margin: auto;
+		}
+		.layout1{
+			background-color: #2ecc71;
+			color: #ffffff;
+			position: absolute;
+			left: 0px;top: 0px;
+			width: 22%;
+			font-size: 45px;
+			text-align: left;
+			border-top-right-radius: 12px;
+			border-bottom-right-radius: 12px;
+			line-height: 65px;
+		}
+		.toggle1{
+			text-decoration:none;
+			color:#fff;
+			position: absolute;
+			left: 250px;top: 2px;
+			width: 29%;
+			font-size: 45px;
+			cursor:pointer;
+			transition:all 1.1s;
+		}
+	
+		.sidebar1{
+			margin-top:0px;
+			margin-left:0%;
+			position:fixed;
+			position:0px 0px 0px 0px;
+			width:6%;
+			height:95%;
+			padding:1%;
+			background:#0074bf;
+			transition:all 1.1s;
+			list-style: none;
+			display: none;
+		}
+		#sidebartoggler1{
+			display: none;
+		}
+		#sidebartoggler1:checked + .page-wrap1 .sidebar1{
+			margin-left:-1%;
+		}
+		#sidebartoggler1:checked + .page-wrap1 .toggle1{
+			margin-left:0px;
+			color:black;
+		}
+		.page-wrap1.sidebar1 ul li img{
+	-moz-filter:invert(100%);
+	-webkit-filter:invert(100%);
+			filter:invert(100%);
+			width:12.5px;
+			height:auto;
+		}
+		#home > a {
+			color: #ffffff;
+			text-decoration: none;
+			font-size: 20px;
+		
+		}
+		#menu > a {
+			color: #ffffff;
+			text-decoration: none;
+			font-size: 20px;
+		
+		}
+		#about > a {
+			color: #ffffff;
+			text-decoration: none;
+			font-size: 18px;
+		
+		}
+		#reference > a {
+			color: #ffffff;
+			text-decoration: none;
+			font-size: 18px;
+		
+		}
+		

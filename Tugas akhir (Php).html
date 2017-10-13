@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Tugasakhir.css">
+	<title>Php</title>
+</head>
+<body>
+<body class="body4">
+<div class="layout4">
+<input type="checkbox" id="sidebartoggler" name="" value="">
+<div class="page-wrap">
+	<label for="sidebartoggler" class="toggle4">&equiv;</label>
+	<div class="sidebar">
+	<b>
+		<li id="home"><a href="Tugasakhir2.html">Home</a></li>
+		<li id="menu"><a href="Tugas akhir (menu).html">Menu</a>
+		<ul class="list">
+			<li><a href="Tugas akhir (java).html" style="text-decoration: none; color: #fff;">Java</a></li>
+			<li><a href="Tugas akhir (js).html" style="text-decoration: none; color: #fff;">JavaScript</a></li>
+			<li><a href="Tugas akhir (MySQL).html" style="text-decoration: none; color: #fff;">MySQL</a></li>
+			<li><a href="Tugas akhir (Css).html" style="text-decoration: none; color: #fff;">Css</a></li>
+			<li><a href="Tugas akhir (Php).html" style="text-decoration: none; color: #fff;">Php</a></li>
+			<li><a href="Tugas akhir (Download).html" style="text-decoration: none; color: #fff;">Download</a></li>
+			</ul></li>
+		<li id="reference"><a href="Tugas akhir (referensi).html">Reference</a></li>
+		<li id="about"><a href="Tugas akhir (kote).html">About</a></li>
+</div></b>
+</div>
+	</div>
+		</div>
+		<header class="mainheader">
+			<nav><ul class="active">
+			<li><a href="Tugas akhir (menu).html"><b>Learn</b></a></li>
+			<li><a href="Tugas akhir (Download).html"><b>Download</b></a></li>
+			<li><a href="Tugas akhir (referensi).html"><b>Reference</b></a></li>
+		</ul></nav>
+		</header>
+		 <div class="maincontent">
+		<div class="content">
+			<article class="topcontent">
+				<header>
+                	<h2 style="color: #000;">Cookies dan Session di Php</h2>
+       			</header>
+                
+                <content>
+                <div align="center">
+                <img src="cookies.jpg" style="width: 50%;">
+                </div>
+                	<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif; font-weight: 100; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="color: #333; font-family: sans-serif;">Hello Worlds! Pasti Anda sering mengunjungi situs-situs web yang mengharuskan login untuk mengakses sesuatu yang ada di dalamnya. Pernah nggak sih berpikir tentang gimana caranya membuat form login? mengharuskan penggunanya untuk login terlebih dahulu, kalau belum login harus diusir (di-redirect maksudnya).
+                	</font></p>
+                	<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif; font-weight: 100; text-align: justify;">Mungkin kalau hanya membuat form username dan password, mengeposkan/mendapatkan value (nilai) dari form tersebut, itu mudah. Tetapi bagaimana caranya mengidentifikasi dan membedakan pengunjung yang sudah login atau belum? Itulah kegunaan dari <b>Session.</b></font></p>
+
+					<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif; font-weight: 100; text-align: justify;">Selain itu, Anda mungkin pernah mengunjungi beberapa toko online yang mempunyai fitur keranjang belanja. Gimana sih menyimpan data-data barang belanjaan tersebut tanpa login terlebih dahulu? Kan biasanya keranjang itu terletak di tabel user. Data barang-barang belanjaan Anda disimpan bukan pada komputer server, melainkan disimpan pada komputer Anda sendiri. Inilah yang dinamakan <b>cookies.</b></font></p>
+
+					<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif; font-weight: 100; text-align: justify;"><b>Cookies</b> adalah suatu informasi yang disimpan pada komputer klien (pengguna) di folder yang sudah ditentukan dengan bantuan peramban web dan dapat diakses kapanpun selama belum dihapus. Perlu diingat, Anda harus rajin-rajin membersihkan cookies yang sudah lagi tidak dipakai, karena ini mempengaruhi kinerja peramban dan komputer Anda. Sedangkan <b>Session</b> adalah sebuah variabel global yang diciptakan pada komputer server pada saat sesi awal membuka suatu halaman (bisa juga saat login) hingga Anda menutup peramban Anda.</font></p>
+					<h3 style="background-color: #fdda3e; border-bottom-right-radius: 42px; border-top-right-radius: 42px; color: white; font-family: sans-serif; line-height: 65px; width: 90%;"><div style="background-color: #d6ba32; float: left; margin-right: 40px; width: 5%;">&nbsp; </div>Script untuk mengaktifkan Cookies</h3>
+					 <pre style="background-color: #33322d; border: 1px solid rgb(221, 221, 221); font-family: monospace, Courier; font-size: 14px; line-height: 3%; padding: 2%; tab-size: 4; white-space: pre-wrap;">
+	<b style="color: #fff;"><span style="color:  #4286f4;">Setcookie</span> (<span style="color: #e6db4f;">'contoh'</span>,<span style="color: #e6db4f;">'isi'</span>,<span style="color: #4286f4;">time</span>()<span style="color: #ff070d;">&nbsp;+&nbsp;<span style="color: #c60be2;">60</span></span>)</b>
+                	</pre>
+                	<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif; font-weight: 100; text-align: justify;">Penjelasan :<ul>
+					<li>setcookie : sintaks untuk mengatur cookies</li>
+					<li>contoh : nama daripada cookies yang diatur</li>
+					<li>isi : value / nilai / isi daripada cookies</li>
+					<li>time() + 60 : waktu hancurnya cookies. time() merupakan waktu sekarang (dibuatnya cookie) dan + 60 adalah waktu 60 detik kedepan</li></ul>
+					<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif; font-weight: 100; text-align: justify;">Mungkin muncul pertanyaan seperti ini : Gimana caranya mengatur cookies tapi value-nya dinamis menggunakan variabel? (Maksudnya nilai/isi tergantung permintaan/input pengguna). Jika ingin seperti demikian, ganti tulisan 'isi' (beserta tanda petik) dengan nama variabel yang isinya ingin digunakan sebagai isi cookie, sehingga menjadi seperti ini</font></p>
+					 <pre style="background-color: #33322d; border: 1px solid rgb(221, 221, 221); font-family: monospace, Courier; font-size: 14px; line-height: 3%; padding: 2%; tab-size: 4; white-space: pre-wrap;">
+	<b style="color: #fff;"><span style="color:  #4286f4;">Setcookie</span> (<span style="color: #e6db4f;">'contoh'</span>,<span style="color: #fff;">$variable</span>,<span style="color: #4286f4;">time</span>()<span style="color: #ff070d;">&nbsp;+&nbsp;<span style="color: #c60be2;">60</span></span>)</b>
+                	</pre>
+                	<h3 style="background-color: #fdda3e; border-bottom-right-radius: 42px; border-top-right-radius: 42px; color: white; font-family: sans-serif; line-height: 65px; width: 90%;"><div style="background-color: #d6ba32; float: left; margin-right: 40px; width: 5%;">&nbsp; </div>Script untuk mengaktifkan Session</h3>
+                	<pre style="background-color: #33322d; border: 1px solid rgb(221, 221, 221); font-family: monospace, Courier; font-size: 14px; line-height: 0.2em; padding: 1em; tab-size: 4; white-space: pre-wrap;">
+	<b style="color: #fff;"><span style="color:  #4286f4;">session_start</span>();</b><br><br><br><br><br><br><br>
+	<b style="color: #fff;"><span style="color:  #fff;">$_Session[]</span></b><b style="color: #fff;"><span style="color:  #e6db4f;">'namasesi'<b style="color: #fff;"><span style="color:  #ff070d;"></span></b><b style="color: #fff;"><span style="color:  #e6db4f;">'Username'</span>;</b>
+                	</pre>
+                	<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif; font-weight: 100; text-align: justify;">Penjelasan :<ul>
+					<li>session_start() : sintaks untuk mengaktifkan fungsi sesi</li>
+					<li>$_SESSION['namasesi'] : nama daripada sesi yang ditentukan</li>
+					<li>Username : value / isi / nilai dari sesi</li></ul>
+					<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif; font-weight: 100; text-align: justify;">Biasanya pada form login, value sesi diisi dengan menggunakan variabel yang didapatkan dari inputan username / email pengguna yang ingin login, yakni $_POST['username']; Setelah itu ditambahkan header("location: user.php"); untuk mengarahkan ke halaman tertentu yang memerlukan sesi.</font></p>
+                </font></content>
+            </article>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

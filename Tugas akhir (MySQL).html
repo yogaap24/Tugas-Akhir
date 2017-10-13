@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Tugasakhir.css">
+	<title>MySQL</title>
+</head>
+<body>
+<body class="body4">
+<div class="layout4">
+<input type="checkbox" id="sidebartoggler" name="" value="">
+<div class="page-wrap">
+	<label for="sidebartoggler" class="toggle4">&equiv;</label>
+	<div class="sidebar">
+	<b>
+		<li id="home"><a href="Tugasakhir2.html">Home</a></li>
+		<li id="menu"><a href="Tugas akhir (menu).html">Menu</a>
+		<ul class="list">
+			<li><a href="Tugas akhir (java).html" style="text-decoration: none; color: #fff;">Java</a></li>
+			<li><a href="Tugas akhir (js).html" style="text-decoration: none; color: #fff;">JavaScript</a></li>
+			<li><a href="Tugas akhir (MySQL).html" style="text-decoration: none; color: #fff;">MySQL</a></li>
+			<li><a href="Tugas akhir (Css).html" style="text-decoration: none; color: #fff;">Css</a></li>
+			<li><a href="Tugas akhir (Php).html" style="text-decoration: none; color: #fff;">Php</a></li>
+			<li><a href="Tugas akhir (Download).html" style="text-decoration: none; color: #fff;">Download</a></li>
+			</ul></li>
+		<li id="reference"><a href="Tugas akhir (referensi).html">Reference</a></li>
+		<li id="about"><a href="Tugas akhir (kote).html">About</a></li>
+</div></b>
+</div>
+	</div>
+		</div>
+		<header class="mainheader">
+			<nav><ul class="active">
+			<li><a href="Tugas akhir (menu).html"><b>Learn</b></a></li>
+			<li><a href="Tugas akhir (Download).html"><b>Download</b></a></li>
+			<li><a href="Tugas akhir (referensi).html"><b>Reference</b></a></li>
+		</ul></nav>
+		</header>
+		<div class="maincontent">
+		<div class="content">
+			<article class="topcontent">
+				<header>
+                	<h2 style="color: #000;">Mari mengenal MySQL dan MySQLi</h2>
+       			</header>
+                
+                <content>
+                <div align="center">
+                <img src="MySQL.png" style="width: 40%;">
+                </div>
+                	<p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="color: #333; font-family: sans-serif;">Pada postingan terdahulu, saya pernah mengatakan bahwa terdapat 3 jenis website, yaitu Statis, Dinamis, dan Interaktif. Nah, sekarang fokus pada web dinamis. Apa sih web dinamis itu? Web Dinamis merupakan web yang isinya dapat berubah kapan saja, data yang ditampilkan diambil dari Database. Jadi, web dinamis membutuhkan Database sebagai media penyimpanan string (tulisan)-nya.</p>
+                	</font></p>
+                	<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif;">Pada Database sendiri, terdapat banyak bahasa yang digunakan untuk mengelolanya. Pengelolaan database ini disebut CRUD (singkatan dari Create, Read, Update, Delete). Bahasa yang paling banyak digunakan untuk mengelola Database adalah MySQL. Kenapa banyak yang menggunakan MySQL sebagai bahasa query database? Ini tak lepas dari kelebihan yang dimilikinya, antara lain :
+                	<ul style="text-decoration: none;">
+                	<li>Dapat bekerja di lebih dari satu platform (Linux, Windows, MacOS, dan lainnya).</li>
+					<li>Gratis.</li>
+					<li>Sintaks yang mudah dipahami (bahkan untuk pemula).</li>
+					<li>Keamanan Terjamin (sulit dibobol oleh para hacker).</li>
+					<li>Memiliki banyak tipe data, seperti DATE, TIME, BLOB, VARCHAR, TEXT, dan lain-lain.</li>
+					<li>Mendukung banyak bahasa pemrograman, seperti Java, Perl, PHP, C++, dan Phyton.</li></ul>
+                </font></content>
+                <h3 style="background-color: #0074bf; border-bottom-right-radius: 33px; border-top-right-radius: 88px; color: white; font-family: sans-serif; line-height: 69px; width: 86%;"><div style="background-color: #ea2d2b; float: left; margin-right: 42px; width: 5%;">&nbsp; </div>Sejarah MySQL </h3>
+                <p style="text-align: justify;"><font style="color: #333; font-family: sans-serif;">MySQL diciptakan pada tahun 1979 oleh Michael Monty Widenius, seorang programmer asal Swedia pada saat bekerja pada perusahaan bernama TcX dan pada awalnya bernama UNIREG. Pada tahun 1994, TcX membuat aplikasi berbasis web dan berencana mencoba UNIREG sebagai sistem database, tetapi dianggap tidak cocok untuk web dinamix.
+
+				<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif;">TcX kemudian mencoba mSQL (miniSQL) versi 1 sebagai sistem database-nya, namun mSQL ini juga memiliki kekurangan, yaitu tidak dapat melakukan indexing.
+
+				<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif;">Akhirnya TcX memutuskan untuk merancang dan mengembangkan sendiri konsep sistem database baru yang merupakan gabungan dari UNIREG dan mSQL. Sehingga pada bulan Mei 1995, sebuah RDBMS (singkatan dari Relational Data Base Management System) baru dirilis, yakni MySQL. Pada tahun itu juga TcX berubah nama menjadi MySQL AB (AB maksudnya sama seperti PT).</font></p>
+
+				 <h3 style="background-color: #0074bf; border-bottom-right-radius: 33px; border-top-right-radius: 88px; color: #ffffff; font-family: sans-serif; line-height: 69px; width: 86%;"><div style="background-color: #ea2d2b; float: left; margin-right: 42px; width: 5%;">&nbsp; </div>Apa Perbedaan MySQL dengan MySQLi ?</h3>
+				 <p style="text-align: justify;"><font style="color: #333; font-family: sans-serif;">Saat ini, penggunaan query yang memakai MySQL sudah tidak disarankan lagi dan diharuskan untuk menggunakan MySQLi atau PDO. Mungkin kedepannya, MySQL sudah tidak digunakan lagi dan akan dihapus. MySQLi merupakan singkatan dari MySQL Improved Extension. Dari namanya saja sudah diketahui perbedaannya.
+
+				<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif;">Ya, MySQLi merupakan versi yang terbaru, versi perbaikan dan tambahan dari Extension MySQL. Secara umum, tidak ada bedanya MySQL dengan MySQLi. Cuma perbedaan pada scriptnya saja. Jika dulu menggunakan mysql_connect(), sekarang menggunakan mysqli_connect(). Sedangkan untuk pemanggilan query jika di versi lawas menggunakan mysql_query("query here"), maka di versi baru ini menggunakan mysqli_query($koneksi_db, "query_here").
+
+				<p style="text-align: justify;"><font style="color: #333; font-family: sans-serif;">Semoga bermanfaat.....</font></p>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
